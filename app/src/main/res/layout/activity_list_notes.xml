@@ -17,13 +17,15 @@
         android:layout_marginTop="12dp"
         android:id="@+id/textView"
         android:textSize="24sp"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:textStyle="normal|italic" />
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="14dp" />
+        android:layout_marginTop="14dp"
+        android:id="@+id/noteList"/>
 </RelativeLayout>
