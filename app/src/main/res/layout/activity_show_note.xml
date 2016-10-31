@@ -50,7 +50,9 @@
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="30dp"
                 android:id="@+id/edit_savenote"
-                android:layout_alignParentBottom="true" />
+                android:layout_alignParentBottom="true"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent" />
 
             <Button
                 android:text="Delete"
@@ -59,7 +61,9 @@
                 android:id="@+id/edit_deletenote"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorAccent" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
