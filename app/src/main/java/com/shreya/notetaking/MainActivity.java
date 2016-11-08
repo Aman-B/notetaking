@@ -26,13 +26,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btn_makenote =(Button) findViewById(R.id.makenote);
         btn_viewnotes=(Button) findViewById(R.id.viewnotes);
-        btn_testdb=(Button) findViewById(R.id.testbutton);
+       // btn_testdb=(Button) findViewById(R.id.testbutton);
 
 
         //set onclick listeners:
         btn_makenote.setOnClickListener(this);
         btn_viewnotes.setOnClickListener(this);
-        btn_testdb.setOnClickListener(this);
+      //  btn_testdb.setOnClickListener(this);
 
 
     }
@@ -47,18 +47,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.makenote:
                 intent=new Intent(MainActivity.this,MakeNoteActivity.class);
+                Toast.makeText(getApplicationContext(),"Add a note!",Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 break;
 
             case R.id.viewnotes:
                 intent=new Intent(MainActivity.this,ListNotes.class);
+                Toast.makeText(getApplicationContext(),"Select a note to edit/delete!",Toast.LENGTH_LONG).show();
                 startActivity(intent);
                 break;
 
-            case R.id.testbutton:
+            /*case R.id.testbutton:
                 showdb();
                 break;
-
+*/
 
 
         }

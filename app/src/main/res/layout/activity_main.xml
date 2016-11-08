@@ -39,15 +39,4 @@
         android:background="@color/colorAccent"
         android:textColor="#FFFFFF" />
 
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/viewnotes"
-        android:layout_alignLeft="@+id/viewnotes"
-        android:layout_alignStart="@+id/viewnotes"
-        android:layout_marginTop="29dp"
-        android:id="@+id/testbutton"
-        android:background="@color/colorAccent"
-        android:textColor="#FFFFFF" />
 </RelativeLayout>

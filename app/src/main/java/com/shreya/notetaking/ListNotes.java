@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.shreya.notetaking.adapter.NoteListAdapter;
 import com.shreya.notetaking.database.DBContract;
@@ -113,7 +112,7 @@ public class ListNotes extends AppCompatActivity {
         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
             NoteDetails noteDetails = (NoteDetails) adapterView.getItemAtPosition(i);
-            Toast.makeText(getApplicationContext(),"Title : "+noteDetails.getNOTE_TITLE()+" content :"+ noteDetails.getNOTE(),Toast.LENGTH_LONG).show();
+           // Toast.makeText(getApplicationContext(),"Title : "+noteDetails.getNOTE_TITLE()+" content :"+ noteDetails.getNOTE(),Toast.LENGTH_LONG).show();
 
             Intent showNoteIntent = new Intent(ListNotes.this, ShowNote.class);
             Bundle bundle= new Bundle();

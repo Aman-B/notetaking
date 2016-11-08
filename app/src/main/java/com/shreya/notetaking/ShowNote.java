@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.shreya.notetaking.database.DBContract;
 import com.shreya.notetaking.database.DBHelper;
@@ -66,12 +67,14 @@ public class ShowNote extends AppCompatActivity implements View.OnClickListener 
             case R.id.edit_savenote:
                 PutDataInDatabase putDataInDatabase = new PutDataInDatabase();
                 putDataInDatabase.execute();
+                Toast.makeText(getApplicationContext(),"Note Updated!",Toast.LENGTH_SHORT).show();
                 break;
 
 
             case R.id.edit_deletenote:
                 DeleteDataFromDatabase deleteDataFromDatabase = new DeleteDataFromDatabase();
                 deleteDataFromDatabase.execute();
+                Toast.makeText(getApplicationContext(),"Note Deleted!",Toast.LENGTH_SHORT).show();
                 break;
 
 

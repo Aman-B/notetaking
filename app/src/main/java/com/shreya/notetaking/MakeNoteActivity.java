@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.shreya.notetaking.database.DBContract;
 import com.shreya.notetaking.database.DBHelper;
@@ -52,6 +53,7 @@ public class MakeNoteActivity extends AppCompatActivity implements View.OnClickL
 
                 insertNoteInDB(note_title,note);
                 Intent intent = new Intent(MakeNoteActivity.this,MainActivity.class);
+                Toast.makeText(getApplicationContext(),"Note Saved!",Toast.LENGTH_SHORT).show();
                 startActivity(intent);
                 break;
         }
