@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Notetaking</string>
+    <string name="app_name">NoteMaking</string>
     <string name="test_title">Woops, no notes yet. Make one!</string>
     <string name="test_note">Your note will be displayed here.</string>
 </resources>
